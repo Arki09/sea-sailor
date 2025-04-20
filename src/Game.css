@@ -1,0 +1,39 @@
+/* Basic styling for the game */
+.game-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: lightblue;  /* Game background */
+}
+
+.game-area {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.obstacle {
+  position: absolute;
+  background-color: red;
+  width: 30px;
+  height: 30px;
+}
+
+.boat {
+  position: absolute;
+  background-color: blue;
+  width: 50px;
+  height: 50px;
+  bottom: 10px;
+  left: 50%; /* Start in the middle of the screen */
+  transform: translateX(-50%);
+}
+
+.game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: red;
+}
